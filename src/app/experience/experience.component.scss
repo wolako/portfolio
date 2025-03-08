@@ -1,0 +1,56 @@
+.experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  
+    .page-title {
+      text-align: center;
+      color: #3f51b5;
+      margin-bottom: 2rem;
+    }
+  
+    .experience-stepper {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+      .step-content {
+        padding: 1rem;
+        
+        h3 {
+          color: #3f51b5;
+          margin-bottom: 0.5rem;
+        }
+        
+        h4 {
+          color: #666;
+          margin-bottom: 1rem;
+        }
+        
+        ul {
+          list-style-type: disc;
+          padding-left: 1.5rem;
+          
+          li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        ::ng-deep .mat-vertical-stepper-header {
+          padding: 24px 12px;
+          
+          .mat-step-label {
+            font-size: 0.9rem;
+          }
+        }
+    
+        ::ng-deep .mat-vertical-content {
+          padding: 12px !important;
+        }
+      }
+    }
+}

@@ -1,0 +1,79 @@
+<!-- projects.component.html -->
+<div class="projects-container">
+  <h1 class="page-title">Mes Projets</h1>
+
+  <div class="projects-grid">
+    <!-- Projet 1 -->
+    <mat-card class="project-card">
+      <mat-card-header>
+        <div mat-card-avatar class="project-avatar">
+          <mat-icon>monitoring</mat-icon>
+        </div>
+        <mat-card-title>Supervision de réseau</mat-card-title>
+        <mat-card-subtitle>Grafana & Cacti</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Mise en place d'une solution complète de supervision réseau avec :
+        </p>
+        <mat-chip-listbox>
+          <mat-chip>Grafana</mat-chip>
+          <mat-chip>Cacti</mat-chip>
+        </mat-chip-listbox>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Projet 2 -->
+    <mat-card class="project-card">
+      <mat-card-header>
+        <div mat-card-avatar class="project-avatar">
+          <mat-icon>security</mat-icon>
+        </div>
+        <mat-card-title>Configuration de pare-feu</mat-card-title>
+        <mat-card-subtitle>OPNsense</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Déploiement d'une solution firewall avancée avec :
+        </p>
+        <mat-chip-listbox>
+          <mat-chip>VLANs</mat-chip>
+          <mat-chip>IDS/IPS</mat-chip>
+          <mat-chip>VPN IPSec</mat-chip>
+          <mat-chip>QoS</mat-chip>
+        </mat-chip-listbox>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Projet 3 - Sites Web -->
+    <mat-card class="project-card">
+      <mat-card-header>
+        <div mat-card-avatar class="project-avatar">
+          <mat-icon>code</mat-icon>
+        </div>
+        <mat-card-title>Applications Web</mat-card-title>
+        <mat-card-subtitle>Solutions Digitales</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Développement de plateformes web professionnelles :
+        </p>
+        <mat-chip-listbox>
+          <mat-chip>Angular 16</mat-chip>
+          <mat-chip>Express.js</mat-chip>
+          <mat-chip>MySQL</mat-chip>
+        </mat-chip-listbox>
+      </mat-card-content>
+      <mat-card-actions>
+        <!-- <a mat-button color="primary" href="https://dowotech.com" target="_blank" rel="noopener noreferrer">
+          <mat-icon>public</mat-icon>
+          DowoTech
+        </a> -->
+        <a mat-button color="accent" href="https://www.wocadigital.com" target="_blank" rel="noopener noreferrer">
+          <mat-icon>open_in_new</mat-icon>
+          WocaDigital
+        </a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

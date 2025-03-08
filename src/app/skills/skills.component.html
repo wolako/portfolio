@@ -1,0 +1,22 @@
+<div class="skills-container">
+  <h1 class="page-title">Compétences Techniques</h1>
+
+  <div class="skills-grid">
+    <mat-card *ngFor="let category of skills" class="skill-card">
+      <mat-card-header>
+        <div mat-card-avatar class="skill-avatar">
+          <mat-icon>{{ category.icon }}</mat-icon>
+        </div>
+        <mat-card-title>{{ category.category }}</mat-card-title>
+      </mat-card-header>
+      
+      <mat-card-content>
+        <mat-chip-listbox>
+          <mat-chip *ngFor="let skill of category.items">
+            {{ skill }}
+          </mat-chip>
+        </mat-chip-listbox>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

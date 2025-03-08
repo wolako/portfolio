@@ -1,0 +1,17 @@
+<div class="experience-container">
+  <h1 class="page-title">Expérience Professionnelle</h1>
+
+  <mat-vertical-stepper class="experience-stepper">
+    <mat-step *ngFor="let exp of experiences" [completed]="true">
+      <ng-template matStepLabel>{{ exp.period }}</ng-template>
+      
+      <div class="step-content">
+        <h3>{{ exp.position }}</h3>
+        <h4>{{ exp.company }}</h4>
+        <ul>
+          <li *ngFor="let task of exp.tasks">{{ task }}</li>
+        </ul>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>

@@ -1,1 +1,144 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+.hero-section {
+  background: linear-gradient(45deg, #3f51b5, #2196f3);
+  color: white;
+  padding: 100px 0;
+  
+  .contact-info {
+    margin-top: 2rem;
+    mat-icon {
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+mat-card {
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-item {
+  border-left: 2px solid #3f51b5;
+  padding-left: 1.5rem;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #3f51b5;
+  }
+}
+
+html, body { height: 100%; }
+body { 
+  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+  line-height: 1.6;
+}
+
+.container {
+  padding-top: 1.5rem !important; // Réduction de l'espace haut
+}
+
+.mat-button {
+  &::before {
+    display: none !important;
+  }
+  
+  .mat-button-focus-overlay {
+    background-color: transparent !important;
+  }
+}
+
+.mat-stroked-button {
+  border-color: rgba(63, 81, 181, 0.2) !important;
+  
+  &:hover {
+    border-color: #3f51b5 !important;
+  }
+}
+
+// Style global pour tous les titres de page
+.page-title {
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #3f51b5;
+    border-radius: 2px;
+  }
+
+  // Version avec bordure complète
+  &.encadre {
+    padding: 1rem;
+    border: 2px solid #3f51b5;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 1.5rem auto;
+    
+    &::after {
+      display: none;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.75rem;
+    
+    &.encadre {
+      padding: 0.75rem;
+      margin: 1rem auto;
+    }
+  }
+}
+
+footer {
+  @media (max-width: 768px) {
+    padding: 1rem;
+    
+    p {
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+  }
+}
+
+// styles.scss
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  mat-card {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (hover: none) {
+  a, button {
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}
